@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Online Flea Market!</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <!-- My Custom CSS -->
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+            <!-- Header Section -->
+        <div class="container-fluid bg-light p-5">
+            <div class="row align-items-center justify-content-center">
+            <!-- Image Column -->
+            <div class="col-lg-5 col-md-5 col-sm-10 text-center">
+                <img src="images/form.jpg" alt="Fill out the form." class="img-fluid rounded-circle bordered-image">
+            </div>
+        
+            <!-- Text Column -->
+            <div class="col-lg-5 col-md-5 col-sm-10 text-center">
+                <div class="text-container px-md-3"> 
+                <h1 class="display-4">Contact a Booth</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Enter your details...</h2>
+            <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <!-- First Name input -->
+                    <div class="mb-3">
+                        <label for="firstNameInput" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstNameInput" placeholder="Enter your first name" required data-bs-toggle="tooltip" title="Enter your first name.">
+                    </div>
+                    
+                    <!-- Last Name input -->
+                    <div class="mb-3">
+                        <label for="lastNameInput" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastNameInput" placeholder="Enter your last name" required data-bs-toggle="tooltip" title="Enter your last name.">
+                    </div>
+
+                    <!-- Telephone input -->
+                    <div class="mb-3">
+                        <label for="telephoneInput" class="form-label">Telephone Number</label>
+                        <input type="tel" class="form-control" id="telephoneInput" placeholder="123-456-7890" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" title="Please enter a 10-digit telephone number, with dashes." data-bs-toggle="tooltip" required>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required data-bs-toggle="tooltip" title="Enter your email address.">
+                    </div>
+
+                    <!-- Booth Selection -->
+                    <div class="mb-3">
+                        <label for="boothSelect" class="form-label">Select Booth</label>
+                        <select class="form-select" id="boothSelect" required data-bs-toggle="tooltip" title="Please select a booth.">
+                        <option value="">Choose a booth</option>
+                        <option value="antique license plates">Antique License Plates Booth</option>
+                        <option value="antique silver">Antique Silver Booth</option>
+                        <option value="beaded necklace">Beaded Necklace Booth</option>
+                        <option value="books">Books Booth</option>
+                        <option value="clocks">Clock Booth</option>
+                        <option value="clothes">Clothes Booth</option>
+                        <option value="dinnerware">Dinnerware Booth</option>
+                        <option value="fresh produce">Fresh Produce Booth</option>
+                        <option value="knicnacks">Porcelain Knicnacks Booth</option>
+                        <option value="toy">Toy Booth</option>
+                        </select>
+                    </div>
+
+                    <!-- Questions / Comments Textarea -->
+                    <div class="mb-3">
+                        <label for="questionTextarea" class="form-label">Questions or Comments</label>
+                        <textarea class="form-control" id="questionTextarea" rows="4" placeholder="Your message here" required data-bs-toggle="tooltip" title="Please provide your question or comment in the box provided."></textarea>
+                    </div>
+
+                        
+                    <div class="text-center">
+                        <!-- Back Button -->
+                        <a href="index.html" class="btn btn-secondary me-4" role="button" data-bs-toggle="tooltip" title="Return to the homepage.">Back</a>
+                    
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip" title="Submit your information.">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- Tooltip Initialization Script -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+        </script>
+    </body>
+</html>

@@ -1,13 +1,13 @@
 /* Add screen styles below */
 
 body {
-    background-color: #f4f0e8; /* Soft beige */
-    color: #503c33; /* Dark brown text */
+    background-color: #f4f0e8; 
+    color: #503c33; 
     font-family: 'Lora', serif;
 }
 
 h1, h2, h3, h4 {
-    color: #8a6d3b; /* Lighter brown for headings */
+    color: #8a6d3b; 
     font-family: 'Playfair Display', serif;
 }
 
@@ -16,3 +16,16 @@ h5 {
     background-color: blanchedalmond;
     font-family: 'Playfair Display', serif;
 }
+
+.bordered-image {
+    border: 5px solid #8a6d3b; 
+    object-fit: cover; /* This will ensure the image covers the circular area */
+    width: 250px; 
+    height: 250px; /* Height equal to the width to maintain the circle shape */
+  }
+
+  .btn-primary, .btn-secondary {
+    background-color: #8a6d3b; 
+    border-color: #8a6d3b; 
+    margin: 25px 0 50px 0;
+  }
