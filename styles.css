@@ -29,3 +29,9 @@ h5 {
     border-color: #8a6d3b; 
     margin: 25px 0 50px 0;
   }
+
+  @media (max-width: 576px) { /* Adjust breakpoint as needed */
+    .h6-sm {
+      font-size: smaller; /* Or you can specify a specific font size */
+    }
+  }
