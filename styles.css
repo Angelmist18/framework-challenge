@@ -24,6 +24,12 @@ h5 {
     height: 250px; /* Height equal to the width to maintain the circle shape */
   }
 
+  .carousel-item img {
+    max-height: 600px; 
+    width: auto; 
+    margin: auto; 
+}
+
   .btn-primary, .btn-secondary {
     background-color: #8a6d3b; 
     border-color: #8a6d3b; 
