@@ -1,2 +1,1 @@
-# boilerplate
-Basic HTML and CSS setup for simple web design
+Website for an online Flea Market. It includes a contact page (non functional submit), and carousel of booths.
